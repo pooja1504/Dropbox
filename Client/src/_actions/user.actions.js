@@ -4,6 +4,7 @@ import { alertActions } from './';
 import { history } from '../_helpers';
 import * as fileuploadservice from '../_services/fileuploadservice';
 
+
 export const userActions = {
     login,
    logout,
@@ -24,7 +25,7 @@ function login(email, password) {
                     {
                     console.log("in actions " + responseJson.user.email + responseJson.status);
                     dispatch(success(responseJson.user));
-                    history.push('/Fileupload');
+                    history.push('/UserDetails');
                     }
                 
                 else

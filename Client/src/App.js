@@ -13,6 +13,7 @@ import Listfiles from './views/Listfiles';
 import Logout from './views/Logout';
 import Navpage from './views/Navpage';
 import Fileshare from './views/Fileshare';
+import UserDetails from './views/UserDetails';
 
 class App extends React.Component {
     constructor(props) {
@@ -45,6 +46,7 @@ class App extends React.Component {
                                 <Route path="/Navpage" component={Navpage}/>
                                 <Route path="/Fileshare" component={Fileshare}/>
                                 <Route path="/Logout" component={Logout}/>
+                                <Route path="/UserDetails" component={UserDetails}/>
                             </div>
                         </Router>
                     </div>
